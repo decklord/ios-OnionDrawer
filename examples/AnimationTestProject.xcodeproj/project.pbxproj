@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC55D851517E67800D012E0 /* KFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC55D841517E67800D012E0 /* KFButton.m */; };
+		AEF063A81517901500CECE6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A71517901500CECE6D /* UIKit.framework */; };
+		AEF063AA1517901500CECE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A91517901500CECE6D /* Foundation.framework */; };
+		AEF063AC1517901500CECE6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063AB1517901500CECE6D /* CoreGraphics.framework */; };
+		AEF063B21517901500CECE6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF063B01517901500CECE6D /* InfoPlist.strings */; };
+		AEF063B41517901500CECE6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063B31517901500CECE6D /* main.m */; };
+		AEF063B81517901500CECE6D /* KFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063B71517901500CECE6D /* KFAppDelegate.m */; };
+		AEF063BB1517901500CECE6D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF063B91517901500CECE6D /* MainStoryboard.storyboard */; };
+		AEF063BE1517901500CECE6D /* KFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063BD1517901500CECE6D /* KFViewController.m */; };
+		AEF063C61517901500CECE6D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063C51517901500CECE6D /* SenTestingKit.framework */; };
+		AEF063C71517901500CECE6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A71517901500CECE6D /* UIKit.framework */; };
+		AEF063C81517901500CECE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A91517901500CECE6D /* Foundation.framework */; };
+		AEF063D01517901500CECE6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF063CE1517901500CECE6D /* InfoPlist.strings */; };
+		AEF063D31517901500CECE6D /* AnimationTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */; };
+		AEF063DE1517927F00CECE6D /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063DD1517927F00CECE6D /* DemoView.m */; };
+		AEF063E0151798DA00CECE6D /* hola.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF063DF151798DA00CECE6D /* hola.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEF063C91517901500CECE6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEF0639A1517901500CECE6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEF063A21517901500CECE6D;
+			remoteInfo = AnimationTestProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEC55D831517E67800D012E0 /* KFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFButton.h; sourceTree = "<group>"; };
+		AEC55D841517E67800D012E0 /* KFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFButton.m; sourceTree = "<group>"; };
+		AEF063A31517901500CECE6D /* AnimationTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF063A71517901500CECE6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AEF063A91517901500CECE6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEF063AB1517901500CECE6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AEF063AF1517901500CECE6D /* AnimationTestProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationTestProject-Info.plist"; sourceTree = "<group>"; };
+		AEF063B11517901500CECE6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEF063B31517901500CECE6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEF063B51517901500CECE6D /* AnimationTestProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationTestProject-Prefix.pch"; sourceTree = "<group>"; };
+		AEF063B61517901500CECE6D /* KFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAppDelegate.h; sourceTree = "<group>"; };
+		AEF063B71517901500CECE6D /* KFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAppDelegate.m; sourceTree = "<group>"; };
+		AEF063BA1517901500CECE6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AEF063BC1517901500CECE6D /* KFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFViewController.h; sourceTree = "<group>"; };
+		AEF063BD1517901500CECE6D /* KFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFViewController.m; sourceTree = "<group>"; };
+		AEF063C41517901500CECE6D /* AnimationTestProjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestProjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF063C51517901500CECE6D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AEF063CD1517901500CECE6D /* AnimationTestProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationTestProjectTests-Info.plist"; sourceTree = "<group>"; };
+		AEF063CF1517901500CECE6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEF063D11517901500CECE6D /* AnimationTestProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestProjectTests.h; sourceTree = "<group>"; };
+		AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestProjectTests.m; sourceTree = "<group>"; };
+		AEF063DC1517927F00CECE6D /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
+		AEF063DD1517927F00CECE6D /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
+		AEF063DF151798DA00CECE6D /* hola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hola.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEF063A01517901500CECE6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063A81517901500CECE6D /* UIKit.framework in Frameworks */,
+				AEF063AA1517901500CECE6D /* Foundation.framework in Frameworks */,
+				AEF063AC1517901500CECE6D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF063C01517901500CECE6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063C61517901500CECE6D /* SenTestingKit.framework in Frameworks */,
+				AEF063C71517901500CECE6D /* UIKit.framework in Frameworks */,
+				AEF063C81517901500CECE6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEF063981517901500CECE6D = {
+			isa = PBXGroup;
+			children = (
+				AEF063AD1517901500CECE6D /* AnimationTestProject */,
+				AEF063CB1517901500CECE6D /* AnimationTestProjectTests */,
+				AEF063A61517901500CECE6D /* Frameworks */,
+				AEF063A41517901500CECE6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEF063A41517901500CECE6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063A31517901500CECE6D /* AnimationTestProject.app */,
+				AEF063C41517901500CECE6D /* AnimationTestProjectTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF063A61517901500CECE6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063A71517901500CECE6D /* UIKit.framework */,
+				AEF063A91517901500CECE6D /* Foundation.framework */,
+				AEF063AB1517901500CECE6D /* CoreGraphics.framework */,
+				AEF063C51517901500CECE6D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEF063AD1517901500CECE6D /* AnimationTestProject */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063B61517901500CECE6D /* KFAppDelegate.h */,
+				AEF063B71517901500CECE6D /* KFAppDelegate.m */,
+				AEF063B91517901500CECE6D /* MainStoryboard.storyboard */,
+				AEF063BC1517901500CECE6D /* KFViewController.h */,
+				AEF063BD1517901500CECE6D /* KFViewController.m */,
+				AEF063DC1517927F00CECE6D /* DemoView.h */,
+				AEF063DD1517927F00CECE6D /* DemoView.m */,
+				AEF063DF151798DA00CECE6D /* hola.png */,
+				AEF063AE1517901500CECE6D /* Supporting Files */,
+				AEC55D831517E67800D012E0 /* KFButton.h */,
+				AEC55D841517E67800D012E0 /* KFButton.m */,
+			);
+			path = AnimationTestProject;
+			sourceTree = "<group>";
+		};
+		AEF063AE1517901500CECE6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063AF1517901500CECE6D /* AnimationTestProject-Info.plist */,
+				AEF063B01517901500CECE6D /* InfoPlist.strings */,
+				AEF063B31517901500CECE6D /* main.m */,
+				AEF063B51517901500CECE6D /* AnimationTestProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEF063CB1517901500CECE6D /* AnimationTestProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063D11517901500CECE6D /* AnimationTestProjectTests.h */,
+				AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */,
+				AEF063CC1517901500CECE6D /* Supporting Files */,
+			);
+			path = AnimationTestProjectTests;
+			sourceTree = "<group>";
+		};
+		AEF063CC1517901500CECE6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEF063CD1517901500CECE6D /* AnimationTestProjectTests-Info.plist */,
+				AEF063CE1517901500CECE6D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEF063A21517901500CECE6D /* AnimationTestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF063D61517901500CECE6D /* Build configuration list for PBXNativeTarget "AnimationTestProject" */;
+			buildPhases = (
+				AEF0639F1517901500CECE6D /* Sources */,
+				AEF063A01517901500CECE6D /* Frameworks */,
+				AEF063A11517901500CECE6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimationTestProject;
+			productName = AnimationTestProject;
+			productReference = AEF063A31517901500CECE6D /* AnimationTestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEF063C31517901500CECE6D /* AnimationTestProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF063D91517901500CECE6D /* Build configuration list for PBXNativeTarget "AnimationTestProjectTests" */;
+			buildPhases = (
+				AEF063BF1517901500CECE6D /* Sources */,
+				AEF063C01517901500CECE6D /* Frameworks */,
+				AEF063C11517901500CECE6D /* Resources */,
+				AEF063C21517901500CECE6D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEF063CA1517901500CECE6D /* PBXTargetDependency */,
+			);
+			name = AnimationTestProjectTests;
+			productName = AnimationTestProjectTests;
+			productReference = AEF063C41517901500CECE6D /* AnimationTestProjectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEF0639A1517901500CECE6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Universidad de Chile";
+			};
+			buildConfigurationList = AEF0639D1517901500CECE6D /* Build configuration list for PBXProject "AnimationTestProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AEF063981517901500CECE6D;
+			productRefGroup = AEF063A41517901500CECE6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEF063A21517901500CECE6D /* AnimationTestProject */,
+				AEF063C31517901500CECE6D /* AnimationTestProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEF063A11517901500CECE6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063B21517901500CECE6D /* InfoPlist.strings in Resources */,
+				AEF063BB1517901500CECE6D /* MainStoryboard.storyboard in Resources */,
+				AEF063E0151798DA00CECE6D /* hola.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF063C11517901500CECE6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063D01517901500CECE6D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEF063C21517901500CECE6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEF0639F1517901500CECE6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063B41517901500CECE6D /* main.m in Sources */,
+				AEF063B81517901500CECE6D /* KFAppDelegate.m in Sources */,
+				AEF063BE1517901500CECE6D /* KFViewController.m in Sources */,
+				AEF063DE1517927F00CECE6D /* DemoView.m in Sources */,
+				AEC55D851517E67800D012E0 /* KFButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF063BF1517901500CECE6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF063D31517901500CECE6D /* AnimationTestProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEF063CA1517901500CECE6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEF063A21517901500CECE6D /* AnimationTestProject */;
+			targetProxy = AEF063C91517901500CECE6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEF063B01517901500CECE6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF063B11517901500CECE6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEF063B91517901500CECE6D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF063BA1517901500CECE6D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		AEF063CE1517901500CECE6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF063CF1517901500CECE6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEF063D41517901500CECE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AEF063D51517901500CECE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEF063D71517901500CECE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationTestProject/AnimationTestProject-Prefix.pch";
+				INFOPLIST_FILE = "AnimationTestProject/AnimationTestProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AEF063D81517901500CECE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationTestProject/AnimationTestProject-Prefix.pch";
+				INFOPLIST_FILE = "AnimationTestProject/AnimationTestProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AEF063DA1517901500CECE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimationTestProject.app/AnimationTestProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationTestProject/AnimationTestProject-Prefix.pch";
+				INFOPLIST_FILE = "AnimationTestProjectTests/AnimationTestProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AEF063DB1517901500CECE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimationTestProject.app/AnimationTestProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationTestProject/AnimationTestProject-Prefix.pch";
+				INFOPLIST_FILE = "AnimationTestProjectTests/AnimationTestProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEF0639D1517901500CECE6D /* Build configuration list for PBXProject "AnimationTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF063D41517901500CECE6D /* Debug */,
+				AEF063D51517901500CECE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF063D61517901500CECE6D /* Build configuration list for PBXNativeTarget "AnimationTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF063D71517901500CECE6D /* Debug */,
+				AEF063D81517901500CECE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF063D91517901500CECE6D /* Build configuration list for PBXNativeTarget "AnimationTestProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF063DA1517901500CECE6D /* Debug */,
+				AEF063DB1517901500CECE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEF0639A1517901500CECE6D /* Project object */;
+}
