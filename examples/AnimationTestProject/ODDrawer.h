@@ -17,8 +17,19 @@
 }
 
 @property (nonatomic) CGPoint origin;
+@property (nonatomic) int anchorBorder;
 @property (nonatomic, strong) void (^onRelease)(void);
 
 - (void)setReleaseCallback:(void (^)(void))block;
+-(int)getDelta:(NSSet *)touches;
+-(int)getMaxDelta;
+-(int)getVisibleLength;
 
 @end
+
+typedef enum anchorBorder{
+    AnchorBorderTop,
+    AnchorBorderBottom,
+    AnchorBorderLeft,
+    AnchorBorderRight
+} anchorBorder;

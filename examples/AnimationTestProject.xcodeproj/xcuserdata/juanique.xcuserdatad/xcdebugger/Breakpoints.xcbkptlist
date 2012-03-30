@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "39"
          endingLineNumber = "39"
-         landmarkName = "-touchesMoved:withEvent:"
+         landmarkName = "-getVisibleLength"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -26,7 +26,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "54"
          endingLineNumber = "54"
-         landmarkName = "-touchesEnded:withEvent:"
+         landmarkName = "-getMaxDelta"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -39,7 +39,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "53"
          endingLineNumber = "53"
-         landmarkName = "-touchesEnded:withEvent:"
+         landmarkName = "-getMaxDelta"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -52,7 +52,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "56"
          endingLineNumber = "56"
-         landmarkName = "-touchesEnded:withEvent:"
+         landmarkName = "-getMaxDelta"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -65,7 +65,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "55"
          endingLineNumber = "55"
-         landmarkName = "-touchesEnded:withEvent:"
+         landmarkName = "-getMaxDelta"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -91,8 +91,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "28"
          endingLineNumber = "28"
-         landmarkName = "@implementation ODDrawer"
-         landmarkType = "3">
+         landmarkName = "-setReleaseCallback:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

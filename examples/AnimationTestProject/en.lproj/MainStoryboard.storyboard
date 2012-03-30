@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Gz-Ic-QYy" customClass="ODDrawer">
-                                <rect key="frame" x="55" y="416" width="126" height="72"/>
+                                <rect key="frame" x="78" y="-17" width="126" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.58330676020000005" green="0.4145730561" blue="0.54112333420000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>

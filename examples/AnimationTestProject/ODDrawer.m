@@ -9,11 +9,12 @@
 #import "ODDrawer.h"
 
 @implementation ODDrawer
-@synthesize origin, onRelease;
+@synthesize origin, onRelease, anchorBorder;
 
 - (id) initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     self.origin = self.frame.origin;
+    self.anchorBorder = AnchorBorderTop;
     return self;
 }
 
@@ -26,34 +27,74 @@
     self.onRelease = block;
 }
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+-(int)getVisibleLength{
+    int screenHeight = self.superview.frame.size.height;
+    int drawerHeight = self.frame.size.height;
+    int screenWidth = self.superview.frame.size.width;
+    int drawerWidth = self.frame.size.width;
+
+    switch(self.anchorBorder){
+        case AnchorBorderTop:
+            return drawerHeight + self.origin.y;
+        case AnchorBorderBottom:
+            return screenHeight - self.origin.y;
+        case AnchorBorderLeft:
+            return drawerWidth + self.origin.x;
+        case AnchorBorderRight:
+            return screenWidth - self.origin.x;
+    }
+}
+-(int)getMaxDelta{
+    int drawerHeight = self.frame.size.height;
+    int drawerWidth = self.frame.size.width;
+
+    switch(self.anchorBorder){
+        case AnchorBorderTop:
+            return -self.origin.y;
+        case AnchorBorderBottom:
+            return drawerHeight - [self getVisibleLength];
+        case AnchorBorderLeft:
+            return -self.origin.x;
+        case AnchorBorderRight:
+            return drawerWidth - [self getVisibleLength];
+    }
+}
+
+-(int)getDelta:(NSSet *)touches{
     UITouch *touch = [touches anyObject];
     currentTouch = [touch locationInView:self.superview];
 
-    int screenHeight = self.superview.frame.size.height;
-    int drawerHeight = self.frame.size.height;
-
-    BOOL top = NO;
-    int sign, drawerVisibleHeight, drawerHiddenHeight;
-
-    if(top){
-        sign = 1;
-        drawerVisibleHeight = screenHeight + self.origin.y;
-        drawerHiddenHeight = -self.origin.y;
-    }else{
-        sign = -1;
-        drawerVisibleHeight = screenHeight - self.origin.y;
-        drawerHiddenHeight = drawerHeight - drawerVisibleHeight;
+    switch(self.anchorBorder){
+        case AnchorBorderTop:
+        case AnchorBorderBottom:
+            return ABS(currentTouch.y - startTouch.y);
+        case AnchorBorderLeft:
+        case AnchorBorderRight:
+            return ABS(currentTouch.x - startTouch.x);
     }
+}
 
-    int delta = sign * (currentTouch.y - startTouch.y);
-    delta = MIN(delta, drawerHiddenHeight);
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    int delta = MIN([self getDelta:touches], [self getMaxDelta]);
 
-    self.frame = CGRectMake(
-        self.frame.origin.x,
-        self.origin.y + delta * sign,
-        self.frame.size.width,
-        self.frame.size.height);
+    int x = self.origin.x;
+    int y = self.origin.y;
+
+    switch(self.anchorBorder){
+        case AnchorBorderTop:
+            y = self.origin.y + delta;
+            break;
+        case AnchorBorderBottom:
+            y = self.origin.y - delta;
+            break;
+        case AnchorBorderLeft:
+            x = self.origin.x + delta;
+            break;
+        case AnchorBorderRight:
+            x = self.origin.x - delta;
+            break;
+    }
+    self.frame = CGRectMake(x, y, self.frame.size.width, self.frame.size.height);
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
