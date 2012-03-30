@@ -21,4 +21,13 @@
 
 - (void)setReleaseCallback:(void (^)(void))block;
 
+- (BOOL) isOverlapped;
+- (BOOL) horizontallyOverlapped;
+- (BOOL) verticallyOverlapped;
+
+- (BOOL) isOnTop;
+- (BOOL) isOnLeft;
+- (BOOL) isOnRight;
+- (BOOL) isOnBottom;
+
 @end

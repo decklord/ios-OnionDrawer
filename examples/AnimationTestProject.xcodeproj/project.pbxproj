@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		88E6102615265C01008D39EA /* ODDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6102515265C01008D39EA /* ODDrawer.m */; };
 		88E6102715265C01008D39EA /* ODDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6102515265C01008D39EA /* ODDrawer.m */; };
-		AEC55D851517E67800D012E0 /* KFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC55D841517E67800D012E0 /* KFButton.m */; };
 		AEF063A81517901500CECE6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A71517901500CECE6D /* UIKit.framework */; };
 		AEF063AA1517901500CECE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A91517901500CECE6D /* Foundation.framework */; };
 		AEF063AC1517901500CECE6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063AB1517901500CECE6D /* CoreGraphics.framework */; };
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		88E6102415265C01008D39EA /* ODDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODDrawer.h; sourceTree = "<group>"; };
 		88E6102515265C01008D39EA /* ODDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODDrawer.m; sourceTree = "<group>"; };
-		AEC55D831517E67800D012E0 /* KFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFButton.h; sourceTree = "<group>"; };
-		AEC55D841517E67800D012E0 /* KFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFButton.m; sourceTree = "<group>"; };
 		AEF063A31517901500CECE6D /* AnimationTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF063A71517901500CECE6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEF063A91517901500CECE6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,8 +114,6 @@
 				AEF063BC1517901500CECE6D /* KFViewController.h */,
 				AEF063BD1517901500CECE6D /* KFViewController.m */,
 				AEF063AE1517901500CECE6D /* Supporting Files */,
-				AEC55D831517E67800D012E0 /* KFButton.h */,
-				AEC55D841517E67800D012E0 /* KFButton.m */,
 				88E6102415265C01008D39EA /* ODDrawer.h */,
 				88E6102515265C01008D39EA /* ODDrawer.m */,
 			);
@@ -245,7 +240,6 @@
 				AEF063B41517901500CECE6D /* main.m in Sources */,
 				AEF063B81517901500CECE6D /* KFAppDelegate.m in Sources */,
 				AEF063BE1517901500CECE6D /* KFViewController.m in Sources */,
-				AEC55D851517E67800D012E0 /* KFButton.m in Sources */,
 				88E6102615265C01008D39EA /* ODDrawer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

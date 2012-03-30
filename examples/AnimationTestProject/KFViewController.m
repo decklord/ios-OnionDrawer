@@ -20,6 +20,12 @@
         testLabel.text = @"Onion released.";
         NSLog(@"release");
     }];
+    
+    if ([drawer isOverlapped]) {
+        NSLog(@"I'm overlapped");
+    }else{
+        NSLog(@"I'm NOT overlapped");
+    }
 }
 
 - (void)viewDidUnload {

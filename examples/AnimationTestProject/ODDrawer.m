@@ -14,6 +14,13 @@
 - (id) initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     self.origin = self.frame.origin;
+    
+    if ([self isOverlapped]) {
+        NSLog(@"I'm Overlaped");
+    }else{
+        NSLog(@"Ups I'm not overlapped");
+    }
+    
     return self;
 }
 
@@ -67,6 +74,69 @@
         self.onRelease();
     }
 
+}
+
+- (BOOL) isOverlapped{
+
+    return ([self verticallyOverlapped] || [self horizontallyOverlapped]);
+
+}
+
+- (BOOL) verticallyOverlapped{
+    return ([self isOnTop] || [self isOnBottom]);
+}
+
+- (BOOL) horizontallyOverlapped{
+    return ([self isOnLeft] || [self isOnRight]);
+}
+
+- (BOOL) isOnTop{
+
+    int elementLeftUpperCornerY = self.origin.y;
+    
+    if (elementLeftUpperCornerY < 0) {
+        return TRUE;
+    }else {
+        return FALSE;
+    }
+
+}
+
+- (BOOL) isOnBottom{
+    
+    int screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    int elementLeftBottomCornerY = (self.origin.y + self.frame.size.height);
+    
+    if (elementLeftBottomCornerY > screenHeight) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+    
+}
+
+- (BOOL) isOnLeft{
+    
+    int elementLeftUpperCornerX = self.origin.x;
+    
+    if (elementLeftUpperCornerX < 0) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+
+}
+
+- (BOOL) isOnRight{
+    
+    int screenWidth = [[UIScreen mainScreen] bounds].size.width;
+    int elementRightUpperCornerX = (self.origin.x + self.frame.size.width );
+    
+    if (elementRightUpperCornerX > screenWidth) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
 }
 
 
