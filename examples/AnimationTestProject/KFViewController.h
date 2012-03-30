@@ -8,21 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "KFButton.h"
+#import "ODDrawer.h"
 
 @interface KFViewController : UIViewController{
 
-    CGPoint startTouch;
-    CGPoint currentTouch;
-    CGPoint originalPosition;
-    
-    UIImageView *superMenu;
-    KFButton *toMove;
-    IBOutlet KFButton *holiButton;
 
 }
 
-@property (strong, nonatomic) IBOutlet UIImageView *superMenu;
 @property (strong, nonatomic) IBOutlet UILabel *testLabel;
-@property (strong, nonatomic) IBOutlet KFButton *holiButton;
+@property (strong, nonatomic) IBOutlet ODDrawer *drawer;
 
 @end

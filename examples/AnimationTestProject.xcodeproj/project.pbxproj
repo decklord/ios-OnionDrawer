@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88E6102615265C01008D39EA /* ODDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6102515265C01008D39EA /* ODDrawer.m */; };
+		88E6102715265C01008D39EA /* ODDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6102515265C01008D39EA /* ODDrawer.m */; };
 		AEC55D851517E67800D012E0 /* KFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC55D841517E67800D012E0 /* KFButton.m */; };
 		AEF063A81517901500CECE6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A71517901500CECE6D /* UIKit.framework */; };
 		AEF063AA1517901500CECE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A91517901500CECE6D /* Foundation.framework */; };
@@ -19,10 +21,6 @@
 		AEF063C61517901500CECE6D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063C51517901500CECE6D /* SenTestingKit.framework */; };
 		AEF063C71517901500CECE6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A71517901500CECE6D /* UIKit.framework */; };
 		AEF063C81517901500CECE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF063A91517901500CECE6D /* Foundation.framework */; };
-		AEF063D01517901500CECE6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF063CE1517901500CECE6D /* InfoPlist.strings */; };
-		AEF063D31517901500CECE6D /* AnimationTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */; };
-		AEF063DE1517927F00CECE6D /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF063DD1517927F00CECE6D /* DemoView.m */; };
-		AEF063E0151798DA00CECE6D /* hola.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF063DF151798DA00CECE6D /* hola.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88E6102415265C01008D39EA /* ODDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODDrawer.h; sourceTree = "<group>"; };
+		88E6102515265C01008D39EA /* ODDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODDrawer.m; sourceTree = "<group>"; };
 		AEC55D831517E67800D012E0 /* KFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFButton.h; sourceTree = "<group>"; };
 		AEC55D841517E67800D012E0 /* KFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFButton.m; sourceTree = "<group>"; };
 		AEF063A31517901500CECE6D /* AnimationTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,13 +53,6 @@
 		AEF063BD1517901500CECE6D /* KFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFViewController.m; sourceTree = "<group>"; };
 		AEF063C41517901500CECE6D /* AnimationTestProjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestProjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF063C51517901500CECE6D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AEF063CD1517901500CECE6D /* AnimationTestProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationTestProjectTests-Info.plist"; sourceTree = "<group>"; };
-		AEF063CF1517901500CECE6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AEF063D11517901500CECE6D /* AnimationTestProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestProjectTests.h; sourceTree = "<group>"; };
-		AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestProjectTests.m; sourceTree = "<group>"; };
-		AEF063DC1517927F00CECE6D /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
-		AEF063DD1517927F00CECE6D /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
-		AEF063DF151798DA00CECE6D /* hola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hola.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				AEF063AD1517901500CECE6D /* AnimationTestProject */,
-				AEF063CB1517901500CECE6D /* AnimationTestProjectTests */,
 				AEF063A61517901500CECE6D /* Frameworks */,
 				AEF063A41517901500CECE6D /* Products */,
 			);
@@ -124,12 +116,11 @@
 				AEF063B91517901500CECE6D /* MainStoryboard.storyboard */,
 				AEF063BC1517901500CECE6D /* KFViewController.h */,
 				AEF063BD1517901500CECE6D /* KFViewController.m */,
-				AEF063DC1517927F00CECE6D /* DemoView.h */,
-				AEF063DD1517927F00CECE6D /* DemoView.m */,
-				AEF063DF151798DA00CECE6D /* hola.png */,
 				AEF063AE1517901500CECE6D /* Supporting Files */,
 				AEC55D831517E67800D012E0 /* KFButton.h */,
 				AEC55D841517E67800D012E0 /* KFButton.m */,
+				88E6102415265C01008D39EA /* ODDrawer.h */,
+				88E6102515265C01008D39EA /* ODDrawer.m */,
 			);
 			path = AnimationTestProject;
 			sourceTree = "<group>";
@@ -141,25 +132,6 @@
 				AEF063B01517901500CECE6D /* InfoPlist.strings */,
 				AEF063B31517901500CECE6D /* main.m */,
 				AEF063B51517901500CECE6D /* AnimationTestProject-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AEF063CB1517901500CECE6D /* AnimationTestProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				AEF063D11517901500CECE6D /* AnimationTestProjectTests.h */,
-				AEF063D21517901500CECE6D /* AnimationTestProjectTests.m */,
-				AEF063CC1517901500CECE6D /* Supporting Files */,
-			);
-			path = AnimationTestProjectTests;
-			sourceTree = "<group>";
-		};
-		AEF063CC1517901500CECE6D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AEF063CD1517901500CECE6D /* AnimationTestProjectTests-Info.plist */,
-				AEF063CE1517901500CECE6D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,7 +209,6 @@
 			files = (
 				AEF063B21517901500CECE6D /* InfoPlist.strings in Resources */,
 				AEF063BB1517901500CECE6D /* MainStoryboard.storyboard in Resources */,
-				AEF063E0151798DA00CECE6D /* hola.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF063D01517901500CECE6D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +245,8 @@
 				AEF063B41517901500CECE6D /* main.m in Sources */,
 				AEF063B81517901500CECE6D /* KFAppDelegate.m in Sources */,
 				AEF063BE1517901500CECE6D /* KFViewController.m in Sources */,
-				AEF063DE1517927F00CECE6D /* DemoView.m in Sources */,
 				AEC55D851517E67800D012E0 /* KFButton.m in Sources */,
+				88E6102615265C01008D39EA /* ODDrawer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF063D31517901500CECE6D /* AnimationTestProjectTests.m in Sources */,
+				88E6102715265C01008D39EA /* ODDrawer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +283,6 @@
 				AEF063BA1517901500CECE6D /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		AEF063CE1517901500CECE6D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEF063CF1517901500CECE6D /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
