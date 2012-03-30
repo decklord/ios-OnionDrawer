@@ -45,6 +45,9 @@
         case AnchorBorderRight:
             return screenWidth - self.origin.x;
     }
+    
+    return 0;
+    
 }
 -(int)getMaxDelta{
     int drawerHeight = self.frame.size.height;
@@ -60,6 +63,8 @@
         case AnchorBorderRight:
             return drawerWidth - [self getVisibleLength];
     }
+    
+    return 0;
 }
 
 -(int)getDelta:(NSSet *)touches{
@@ -76,6 +81,9 @@
         case AnchorBorderRight:
             return -(currentTouch.x - startTouch.x);
     }
+    
+    return 0;
+    
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
