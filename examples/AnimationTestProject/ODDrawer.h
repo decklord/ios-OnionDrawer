@@ -10,18 +10,22 @@
 
 @interface ODDrawer : UIView{
     CGPoint startTouch;
-    CGPoint origin;
+    CGRect originalRect;
+    CGRect rectBeforeSlide;
     CGPoint currentTouch;
 
     BOOL autoRollback;
+    int minVisibleLength;
     int anchorBorder;
 
     void (^onRelease)(void);
 }
 
-@property (nonatomic) CGPoint origin;
+@property (nonatomic) CGRect rectBeforeSlide;
+@property (nonatomic) CGRect originalRect;
 @property (nonatomic) BOOL autoRollback;
 @property (nonatomic) int anchorBorder;
+@property (nonatomic) int minVisibleLength;
 @property (nonatomic, strong) void (^onRelease)(void);
 
 - (void)setReleaseCallback:(void (^)(void))block;
@@ -39,6 +43,7 @@
 - (BOOL) isOnBottom;
 
 - (BOOL) getAnchorBorder;
+- (void) initialize;
 
 @end
 

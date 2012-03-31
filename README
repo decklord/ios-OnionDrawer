@@ -1,0 +1,6 @@
+###Usage
+
+    [drawer setReleaseCallback:^{
+        testLabel.text = @"Onion released.";
+        NSLog(@"release");
+    }];

@@ -45,6 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="drawer" destination="1Kp-Yb-CHP" id="BDj-uQ-EhS"/>
                         <outlet property="testLabel" destination="Fvt-hD-jId" id="DuY-dd-KuJ"/>
                     </connections>
                 </viewController>
@@ -52,6 +53,18 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="KFViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="drawer" candidateClass="ODDrawer"/>
+                <relationship kind="outlet" name="testLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ODDrawer" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ODDrawer.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
