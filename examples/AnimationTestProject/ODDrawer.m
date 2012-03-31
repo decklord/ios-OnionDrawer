@@ -46,11 +46,13 @@
             return screenWidth - rect.origin.x;
     }
 
+    return 0;
 }
 
 -(int)getVisibleLength{
     return [self getVisibleLengthForRect:self.rectBeforeSlide];
 }
+
 -(int)getMaxDelta{
     int drawerHeight = self.frame.size.height;
     int drawerWidth = self.frame.size.width;
@@ -65,6 +67,8 @@
         case AnchorBorderRight:
             return drawerWidth - [self getVisibleLength];
     }
+    
+    return 0;
 }
 
 -(int)getDelta:(NSSet *)touches{
@@ -81,6 +85,9 @@
         case AnchorBorderRight:
             return -(currentTouch.x - startTouch.x);
     }
+    
+    return 0;
+    
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
