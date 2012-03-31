@@ -9,12 +9,14 @@
 #import "ODDrawer.h"
 
 @implementation ODDrawer
-@synthesize origin, onRelease, anchorBorder;
+@synthesize origin, onRelease, autoRollback, anchorBorder;
 
 - (id) initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     self.origin = self.frame.origin;
-    self.anchorBorder = AnchorBorderTop;
+    self.autoRollback = NO;
+    self.anchorBorder = AnchorBorderNone;
+
     return self;
 }
 
@@ -33,7 +35,7 @@
     int screenWidth = self.superview.frame.size.width;
     int drawerWidth = self.frame.size.width;
 
-    switch(self.anchorBorder){
+    switch([self getAnchorBorder]){
         case AnchorBorderTop:
             return drawerHeight + self.origin.y;
         case AnchorBorderBottom:
@@ -48,7 +50,7 @@
     int drawerHeight = self.frame.size.height;
     int drawerWidth = self.frame.size.width;
 
-    switch(self.anchorBorder){
+    switch([self getAnchorBorder]){
         case AnchorBorderTop:
             return -self.origin.y;
         case AnchorBorderBottom:
@@ -64,13 +66,15 @@
     UITouch *touch = [touches anyObject];
     currentTouch = [touch locationInView:self.superview];
 
-    switch(self.anchorBorder){
+    switch([self getAnchorBorder]){
         case AnchorBorderTop:
+            return (currentTouch.y - startTouch.y);
         case AnchorBorderBottom:
-            return ABS(currentTouch.y - startTouch.y);
+            return -(currentTouch.y - startTouch.y);
         case AnchorBorderLeft:
+            return (currentTouch.x - startTouch.x);
         case AnchorBorderRight:
-            return ABS(currentTouch.x - startTouch.x);
+            return -(currentTouch.x - startTouch.x);
     }
 }
 
@@ -80,7 +84,7 @@
     int x = self.origin.x;
     int y = self.origin.y;
 
-    switch(self.anchorBorder){
+    switch([self anchorBorder]){
         case AnchorBorderTop:
             y = self.origin.y + delta;
             break;
@@ -99,10 +103,14 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.3];
-    self.frame = CGRectMake(self.origin.x, self.origin.y, self.frame.size.width, self.frame.size.height);
-    [UIView commitAnimations];//Starts the Animation
+    if([self autoRollback]){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.3];
+        self.frame = CGRectMake(self.origin.x, self.origin.y, self.frame.size.width, self.frame.size.height);
+        [UIView commitAnimations];//Starts the Animation
+    }else{
+        self.origin = self.frame.origin;
+    }
 
     if(self.onRelease){
         self.onRelease();
@@ -110,5 +118,81 @@
 
 }
 
+- (BOOL) isOverlapped{
+
+    return ([self verticallyOverlapped] || [self horizontallyOverlapped]);
+
+}
+
+- (BOOL) verticallyOverlapped{
+    return ([self isOnTop] || [self isOnBottom]);
+}
+
+- (BOOL) horizontallyOverlapped{
+    return ([self isOnLeft] || [self isOnRight]);
+}
+
+- (BOOL) isOnTop{
+
+    int elementLeftUpperCornerY = self.origin.y;
+
+    if (elementLeftUpperCornerY < 0) {
+        return TRUE;
+    }else {
+        return FALSE;
+    }
+
+}
+
+- (BOOL) isOnBottom{
+    int screenHeight = self.superview.frame.size.height;
+    int elementLeftBottomCornerY = (self.origin.y + self.frame.size.height);
+
+    if (elementLeftBottomCornerY > screenHeight) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+
+}
+
+- (BOOL) isOnLeft{
+
+    int elementLeftUpperCornerX = self.origin.x;
+
+    if (elementLeftUpperCornerX < 0) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+
+}
+
+- (BOOL) isOnRight{
+
+    int screenWidth = self.superview.frame.size.width;
+    int elementRightUpperCornerX = (self.origin.x + self.frame.size.width );
+
+    if (elementRightUpperCornerX > screenWidth) {
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+}
+
+- (BOOL) getAnchorBorder{
+    if([self anchorBorder] == AnchorBorderNone){
+        if([self isOnTop]){
+            self.anchorBorder = AnchorBorderTop;
+        }else if([self isOnLeft]){
+            self.anchorBorder = AnchorBorderLeft;
+        }else if([self isOnRight]){
+            self.anchorBorder = AnchorBorderRight;
+        }else if([self isOnBottom]){
+            self.anchorBorder = AnchorBorderBottom;
+        }
+    }
+    return self.anchorBorder;
+}
 
 @end

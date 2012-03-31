@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KFButton.h"
 #import "ODDrawer.h"
 
 @interface KFViewController : UIViewController{
