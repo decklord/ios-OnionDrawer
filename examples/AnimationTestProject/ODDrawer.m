@@ -21,6 +21,9 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if([self anchorBorder] == AnchorBorderNone){
+        [self initialize];
+    }
     UITouch *touch = [touches anyObject];
     startTouch = [touch locationInView:self.superview];
 }
@@ -213,9 +216,6 @@
 }
 
 - (BOOL) getAnchorBorder{
-    if([self anchorBorder] == AnchorBorderNone){
-        [self initialize];
-    }
     return self.anchorBorder;
 }
 
